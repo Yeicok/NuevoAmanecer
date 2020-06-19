@@ -19,7 +19,7 @@
 <?php
 $contraseña = "ab3e2655";
 $usuario = "b5b7f186c80536";
-$nombre_base_de_datos = "mascotas";
+$nombre_base_de_datos = "heroku_ab9537817b7d7dc";
 try {
     return new PDO('mysql:host=us-cdbr-east-05.cleardb.net;dbname=' . $nombre_base_de_datos, $usuario, $contraseña);
 } catch (Exception $e) {
