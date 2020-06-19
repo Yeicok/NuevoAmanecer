@@ -17,11 +17,11 @@
     Contacto:   https://parzibyte.me/blog/contacto/
 */ ?>
 <?php
-$contraseña = "";
-$usuario = "root";
+$contraseña = "ab3e2655";
+$usuario = "b5b7f186c80536";
 $nombre_base_de_datos = "mascotas";
 try {
-    return new PDO('mysql:host=localhost;dbname=' . $nombre_base_de_datos, $usuario, $contraseña);
+    return new PDO('mysql:host=us-cdbr-east-05.cleardb.net;dbname=' . $nombre_base_de_datos, $usuario, $contraseña);
 } catch (Exception $e) {
     echo "Ocurrió algo con la base de datos: " . $e->getMessage();
 }
