@@ -1,6 +1,6 @@
   
 <?php 
-  header('Access-Control-Allow-Origin: http://localhost:4200'); 
+  header('Access-Control-Allow-Origin: *'); 
   header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
   
   $json = file_get_contents('php://input'); // RECIBE EL JSON DE ANGULAR
@@ -12,7 +12,7 @@
   $conexion = conexion(); // CREA LA CONEXION
   
   // REALIZA LA QUERY A LA DB
-  $resultado = mysqli_query($conexion, "SELECT nombre,usuario FROM usuario WHERE usuario='$params->usuario' AND clave='$params->clave'");
+  $resultado = mysqli_query($conexion, "SELECT * FROM usuario WHERE usuario='$params->usuario' AND clave='$params->clave'");
  
     class Result {}
     
