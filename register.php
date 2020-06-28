@@ -4,16 +4,16 @@ $postdata = file_get_contents("php://input");
 if(isset($postdata) && !empty($postdata))
 {
 $request = json_decode($postdata);
-$name = trim($request->name);
-$pwd = mysqli_real_escape_string($mysqli, trim($request->pwd));
-$email = mysqli_real_escape_string($mysqli, trim($request->email));
-$sql = "INSERT INTO users(name,password,email) VALUES ('$name','$pwd','$email')";
+$name = trim($request->nombre);
+$pwd = mysqli_real_escape_string($mysqli, trim($request->clave));
+$email = mysqli_real_escape_string($mysqli, trim($request->usuario));
+$sql = "INSERT INTO usuario(nombre,clave,usuario) VALUES ('$nombre','$clave','$usuario')";
 if ($mysqli->query($sql) === TRUE) {
 $authdata = [
-'name' => $name,
-'pwd' => '',
-'email' => $email,
-'Id' => mysqli_insert_id($mysqli)
+'nombre' => $name,
+'clave' => '',
+'usuario' => $email,
+'idUsuario' => mysqli_insert_id($mysqli)
 ];
 echo json_encode($authdata);
 }
