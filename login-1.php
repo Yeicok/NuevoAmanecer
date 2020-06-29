@@ -6,7 +6,7 @@ if(isset($postdata) && !empty($postdata))
 {
 $clave = mysqli_real_escape_string($mysqli, trim($request->clave));
 $usuario = mysqli_real_escape_string($mysqli, trim($request->usuario));
-$sql = "SELECT * FROM usuario where usuario='$usuario' and clave='$clave'";
+$sql = "SELECT idUsuario,nombre,usuario FROM usuario where usuario='$usuario' and clave='$clave'";
 if($result = mysqli_query($mysqli,$sql))
 {
 $rows = array();
