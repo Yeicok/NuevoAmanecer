@@ -7,7 +7,7 @@
   $conexion = conexion(); // CREA LA CONEXION
 
   // REALIZA LA QUERY A LA DB
-  $registros = mysqli_query($conexion, "SELECT * FROM usuarios WHERE idUsuario=$_GET[idUsuario]");
+  $registros = mysqli_query($conexion, "SELECT * FROM usuario WHERE idUsuario=$_GET[idUsuario]");
   
   // SI EL USUARIO EXISTE OBTIENE LOS DATOS Y LOS GUARDA EN UN ARRAY
   if ($resultado = mysqli_fetch_array($registros))  
