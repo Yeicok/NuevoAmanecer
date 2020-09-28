@@ -20,7 +20,7 @@
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
         <div class="sidebar-brand-icon">
-             <img src="/Enfermeria/PUBLIC/img/icon.jpeg" width="65" height="68">
+             <img src="/PUBLIC/img/icon.jpeg" width="65" height="68">
         </div>
       </a>
 
@@ -29,7 +29,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
-        <a class="nav-link" href="/Enfermeria/PUBLIC/views/panel-admin/admin.php">
+        <a class="nav-link" href="/PUBLIC/views/panel-admin/admin.php">
           <div class="sb-nav-link-icon">
               <i class="fas fa-home"></i>
               <span>Inicio</span>
