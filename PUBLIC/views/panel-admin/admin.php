@@ -1,5 +1,5 @@
 <!-- head-->
-<?php include $_SERVER["DOCUMENT_ROOT"].'/PUBLIC/views/head.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"].'/PUBLIC/views/heads.php'; ?>
 
 <body id="page-top">
 
