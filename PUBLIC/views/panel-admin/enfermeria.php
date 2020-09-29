@@ -156,6 +156,6 @@
 
         <!-- script-->
         <?php  include $_SERVER["DOCUMENT_ROOT"] .'/PUBLIC/views/script.php'; ?>
-        <script src="/PUBLIC/js/funciones/tablas/tablaEnfermeria.js" language="Javascript"> </script>
+        <script src="/PUBLIC/js/funciones/tablas/tablaEnfermerias.js" language="Javascript"> </script>
         <script src="/PUBLIC/js/funciones/clave.js" language="Javascript"> </script>
 </body>

@@ -104,5 +104,5 @@
     <!-- script-->
     <?php  include $_SERVER["DOCUMENT_ROOT"] .'/PUBLIC/views/script.php'; ?>
     <script src="/PUBLIC/js/funciones/tablas/tablaDetallePaciente.js"></script>
-    <script src="/PUBLIC/js/funciones/pacientes.js"></script>
+    <script src="/PUBLIC/js/funciones/paciente.js"></script>
 </body>
