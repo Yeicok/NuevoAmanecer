@@ -150,5 +150,5 @@
 
         <!-- script-->
         <?php  include $_SERVER["DOCUMENT_ROOT"] .'/PUBLIC/views/script.php'; ?>
-    <script src="/PUBLIC/js/funciones/tablas/tablaPaciente.js"></script>
+    <script src="/PUBLIC/js/funciones/tablas/tablaPacientes.js"></script>
 </body>

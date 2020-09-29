@@ -7,10 +7,10 @@ function mostrarContrasena(){
     }
 }
 function mostrarContrasena1(){
-    var tipo = document.getElementById("validationCustom2");
-    if(tipo.type == "password"){
-        tipo.type = "text";
+    var tipos = document.getElementById("validationCustom3");
+    if(tipos.type == "password"){
+        tipos.type = "text";
     }else{
-        tipo.type = "password";
+        tipos.type = "password";
     }
 }

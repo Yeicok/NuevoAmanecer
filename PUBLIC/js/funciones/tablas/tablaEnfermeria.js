@@ -1,17 +1,16 @@
-function fetch_datas1()
+function tablaEnfermeria()
 {
-fetch('/APP/controllers/adminController.php?action=registrosPacientes')
+fetch('/APP/controllers/adminController.php?action=registrosEnfermeria')
 .then((res) => res.json())
 .then(response => {
         // console.log(response);
        let output = '';
 for(let i in response){   
    output += `<tr>
-       <td>${response[i].idPaciente}</td>
-       <td>${response[i].cedula}</td>
-       <td>${response[i].nombreP}</td>
-       <td>${response[i].edad}</td>
-       <td><a class='btn btn-light' href='/Enfermeria/APP/controllers/adminController.php?action=getDetallePaciente&id=${response[i].idPaciente}'><i class="fas fa-user-edit"></i></a></td>
+       <td><a class='btn btn-light' href='/APP/controllers/adminController.php?action=getDetalleEnfermeria&id=${response[i].id}'><i class='far fa-eye'></i></a></td>
+       <td>${response[i].id}</td>
+       <td>${response[i].usuario}</td>
+       <td>${response[i].nombre}</td>
    </tr>`;
 }
 
@@ -58,4 +57,4 @@ $('.table').DataTable({
 }).catch(error => error);
 
 }   
-fetch_datas1();
+tablaEnfermeria();
