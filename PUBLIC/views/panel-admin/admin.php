@@ -1,5 +1,5 @@
 <!-- head-->
-<?php include $_SERVER["DOCUMENT_ROOT"].'/PUBLIC/views/head.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"].'./PUBLIC/views/head.php'; ?>
 
 <body id="page-top">
 
@@ -42,6 +42,6 @@
         <!-- End of Page Wrapper -->
 
         <!-- script-->
-        <?php include $_SERVER["DOCUMENT_ROOT"].'/PUBLIC/views/script.php'; ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"].'./PUBLIC/views/script.php'; ?>
     
 </body>
