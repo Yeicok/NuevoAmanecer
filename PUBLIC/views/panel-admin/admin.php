@@ -1,5 +1,5 @@
 <!-- head-->
-<?php  include $_SERVER["DOCUMENT_ROOT"] .'/PUBLIC/views/head.php'; ?>
+<?php include $_SERVER["DOCUMENT_ROOT"].'/PUBLIC/views/head.php'; ?>
 
 <body id="page-top">
 
@@ -7,7 +7,7 @@
     <div id="wrapper">
         
         <!-- Sidebar -->
-        <?php  include $_SERVER["DOCUMENT_ROOT"] .'/PUBLIC/views/panel-admin/menu-lateral.php'; ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"].'/PUBLIC/views/panel-admin/menu-lateral.php'; ?>
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
@@ -42,6 +42,6 @@
         <!-- End of Page Wrapper -->
 
         <!-- script-->
-        <?php  include $_SERVER["DOCUMENT_ROOT"] .'/PUBLIC/views/script.php'; ?>
+        <?php include $_SERVER["DOCUMENT_ROOT"].'/PUBLIC/views/script.php'; ?>
     
 </body>
