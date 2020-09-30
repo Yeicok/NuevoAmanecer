@@ -1,4 +1,4 @@
-function fetch_data()
+function tablanovedades()
 {
 fetch('/APP/controllers/enfController.php?action=vistaNovedades')
 .then((res) => res.json())
@@ -7,7 +7,7 @@ fetch('/APP/controllers/enfController.php?action=vistaNovedades')
        let output = '';
 for(let i in response){   
    output += `<tr>
-       <td><a class='btn btn-light' href='/Enfermeria/APP/controllers/enfController.php?action=vistaUpdateNovedades&idNovedad=${response[i].idNovedad}'><i class='far fa-eye'></i></a></td>
+       <td><a class='btn btn-light' href='/APP/controllers/enfController.php?action=vistaUpdateNovedades&idNovedad=${response[i].idNovedad}'><i class='far fa-eye'></i></a></td>
        <td>${response[i].idNovedad}</td>
        <td>${response[i].nombreP}</td>
        <td>${response[i].turno}</td>
@@ -59,4 +59,4 @@ $('.table').DataTable({
 }).catch(error => error);
 
 }   
-fetch_data();
+tablanovedades();

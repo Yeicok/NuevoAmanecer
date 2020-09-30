@@ -1,5 +1,5 @@
 <!-- head-->
-<?php  include $_SERVER["DOCUMENT_ROOT"] .'/PUBLIC/views/head.php'; ?>
+<?php  include $_SERVER["DOCUMENT_ROOT"] .'/PUBLIC/views/heads.php'; ?>
 
 <body id="page-top">
 
@@ -64,6 +64,6 @@
 
         <!-- script-->
         <?php  include $_SERVER["DOCUMENT_ROOT"] .'/PUBLIC/views/script.php'; ?>
-        <script src="/PUBLIC/js/funciones/tablas/tablaNovedad.js"></script>
+        <script src="/PUBLIC/js/funciones/tablas/tablaNovedades.js"></script>
 
 </body>
