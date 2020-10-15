@@ -60,7 +60,7 @@
                                                 foreach($res as $data){?>
                                                         <tr>
                                             
-                                                            <td><a class='btn btn-light' target="_blank" href='/Enfermeria/APP/controllers/adminController.php?action=DetallePacientes&id=<?php echo $data['idNovedad'];?>'><i class='far fa-eye'></i></a></td>
+                                                            <td><a class='btn btn-light' target="_blank" href='/APP/controllers/adminController.php?action=DetallePacientes&id=<?php echo $data['idNovedad'];?>'><i class='far fa-eye'></i></a></td>
                                                             <td><?php echo $data['idNovedad'];?></td>
                                                             <td><?php echo $data['nombreP']  ;?></td>
                                                             <td><?php echo $data['turno']    ;?></td>
