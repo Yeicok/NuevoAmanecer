@@ -20,7 +20,7 @@
 
                     <h4 class="mt-4">Perfil</h4>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="/PUBLIC/views/panel-admin/admin.php">Inicio</a></li>
+                        <li class="breadcrumb-item"><a href="/PUBLIC/views/panel-usuario/usuario.php">Inicio</a></li>
                         <li class="breadcrumb-item active">Perfil</li>
                     </ol>
 
