@@ -119,7 +119,8 @@
                                                     <th width="5%"></th>
                                                     <th width="5%">Codigo</th>
                                                     <th width="10%">Usuario</th>
-                                                    <th width="80%">Nombre</th>
+                                                    <th width="70%">Nombre</th>
+                                                    <th width="10%">Imprimir</th>
 
                                                 </tr>
                                             </thead>
@@ -131,6 +132,7 @@
                                                     <th>Codigo</th>
                                                     <th>Usuario</th>
                                                     <th>Nombre</th>
+                                                    <th>Imprimir</th>
                                                 </tr>
                                             </thead>
                                         </table>
@@ -156,6 +158,6 @@
 
         <!-- script-->
         <?php  include $_SERVER["DOCUMENT_ROOT"] .'/PUBLIC/views/script.php'; ?>
-        <script src="/PUBLIC/js/funciones/tablas/tablaEnfermeria.js" language="Javascript"> </script>
+        <script src="/PUBLIC/js/funciones/tablas/tablaEnfermerias.js" language="Javascript"> </script>
         <script src="/PUBLIC/js/funciones/claves.js" language="Javascript"> </script>
 </body>
