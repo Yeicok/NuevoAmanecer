@@ -23,7 +23,7 @@
                         <li class="breadcrumb-item active">Detalle Enfermeria</li>
                     </ol>
                     <div class="row justify-content-md-center">
-                            <div class="card"  style="width: 50rem;" >
+                            <div class="card"  style="width: 60rem;" >
                                 <div class="card-header text-center">
                                     Novedad x Enfermero
                                 </div>
@@ -52,7 +52,7 @@
                                                 <td><?php echo $data['fecha']    ;?></td>
                                                 <td><?php echo $data['novedad']  ;?></td>
                                                 <td><?php echo $data['nombre']  ;?></td>
-                                                <td><a class='nav-link' href=''><div class='sb-nav-link-icons'><i class='fas fa-file-word'></i></div></a></td>
+                                                <td><a class='nav-link' href=''><div style="font-size: 48px;" class='sb-nav-link-icons'><i class='fas fa-file-word'></i></div></a></td>
                                             </tr>
                                         <?php } ?>
                                             </tbody>
