@@ -86,7 +86,7 @@
 
       <!-- script-->
       <?php  include $_SERVER["DOCUMENT_ROOT"] .'/PUBLIC/views/script.php'; ?>
-      <script src="/PUBLIC/js/funciones/tablas/tablaDetalleEnfermerias.js" language="Javascript"> </script>
+      <script src="/PUBLIC/js/funciones/tablas/tablaDetalleEnfermeria.js" language="Javascript"> </script>
 
 
 
