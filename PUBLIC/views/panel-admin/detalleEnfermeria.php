@@ -52,7 +52,7 @@
                                                 <td><?php echo $data['fecha']    ;?></td>
                                                 <td><?php echo $data['novedad']  ;?></td>
                                                 <td><?php echo $data['nombre']  ;?></td>
-                                                <td><a class='nav-link' href=''><div style="font-size: 48px;" class='sb-nav-link-icons'><i class='fas fa-file-word'></i></div></a></td>
+                                                <td><a class='nav-link' href=''><div style="font-size: 10px;" class='sb-nav-link-icons'><i class='fas fa-file-word'></i></div></a></td>
                                             </tr>
                                         <?php } ?>
                                             </tbody>
