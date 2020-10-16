@@ -38,7 +38,8 @@
                                                     <th width="10%">Turno</th>
                                                     <th width="15%">Fecha</th>
                                                     <th width="35%">Notas</th>
-                                                    <th width="10%">Enfermero</th>
+                                                    <th width="5%">Enfermero</th>
+                                                    <th width="5%">Imprimir</th>
                                                 </tr>
                                             </thead>
                                             <tbody class="tbody">   
@@ -51,6 +52,7 @@
                                                 <td><?php echo $data['fecha']    ;?></td>
                                                 <td><?php echo $data['novedad']  ;?></td>
                                                 <td><?php echo $data['nombre']  ;?></td>
+                                                <td><a class='nav-link' href=''><div class='sb-nav-link-icons'><i class='fas fa-file-word'></i></div></a></td>
                                             </tr>
                                         <?php } ?>
                                             </tbody>
@@ -63,6 +65,7 @@
                                                     <th>Fecha</th>
                                                     <th>Notas</th>
                                                     <th>Enfermero</th>
+                                                    <th>Imprimir</th>
                                                 </tr>
                                             </thead>
                                         </table>
