@@ -11,7 +11,7 @@ for(let i in response){
        <td>${response[i].id}</td>
        <td>${response[i].usuario}</td>
        <td>${response[i].nombre}</td>
-       <td><a class='nav-link' href=''><div class='sb-nav-link-icons'><i class='fas fa-file-word'></i></div></a></td>
+       <td><a class='nav-link' href=''><div class='sb-nav-link-icons'><span style="font-size: 3em; "><i class='fas fa-file-word'></i></span></div></a></td>
    </tr>`;
 }
 
