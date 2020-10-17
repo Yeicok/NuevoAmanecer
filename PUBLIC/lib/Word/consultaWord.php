@@ -20,10 +20,10 @@ if ($res != null || $res1 != null || $res2 != null || $res3 != null || $res4 != 
    $Liquidoe   = $res3->fetch_all();
    $medicacion = $res4->fetch_all();
    
-        $nombre          =$detalles[13]; 
-        $turno           =$detalles[8];
-        $fechas          =$detalles[9];
-        $nota            =$detalles[11];
+        $nombre =$detalles[13]; 
+        $turno  =$detalles[8];
+        $fechas =$detalles[9];
+        $nota   =$detalles[11];
         
 // --- Recorer array de signos vitales      
 $datosS= array();
@@ -86,7 +86,7 @@ for( $columna = 0;  $columna < count ($medicacion);  $columna++){
 
 
 // salto de linea en un textarea
-$nota    = preg_replace('~\R~u', '</w:t><w:br/><w:t>', $nota);
+$nota = preg_replace('~\R~u', '</w:t><w:br/><w:t>', $nota);
 
 
         
@@ -102,12 +102,12 @@ $templateWord->cloneRowAndSetValues('horaM', $datosM);
 
 
 // --- Guardamos el documento
-$templateWord->saveAs('HVq-vision.docx');
+$templateWord->saveAs('UnNuevoAmanecer.docx');
 
-header("Content-Disposition: attachment; filename=HVq-vision-$nombre.docx; charset=iso-8859-1");
-echo file_get_contents('HVq-vision.docx');
+header("Content-Disposition: attachment; filename=UnNuevoAmanecer-$nombre.docx; charset=iso-8859-1");
+echo file_get_contents('UnNuevoAmanecer.docx');
 
 // --- borramos el fichero
-unlink('/PUBLIC/lib/Word/HVq-vision.docx');
+unlink('/PUBLIC/lib/Word/UnNuevoAmanecer.docx');
         
 ?>
