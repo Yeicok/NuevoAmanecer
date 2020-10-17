@@ -16,14 +16,15 @@ if ($res != null || $res1 != null || $res2 != null || $res3 != null || $res4 != 
      
    $detalles   = $res->fetch_all()[0];
    $Signosv    = $res1->fetch_all();
-   // $Balancella = $res2->fetch_all();
-   // $Liquidoe   = $res3->fetch_all();
-   // $medicacion = $res4->fetch_all();
+   $Balancella = $res2->fetch_all();
+   $Liquidoe   = $res3->fetch_all();
+   $medicacion = $res4->fetch_all();
    
         $nombre =$detalles[13]; 
         $turno  =$detalles[8];
         $fecha =$detalles[9];
         $nota   =$detalles[11];
+        $enf   =$detalles[2];
         
 // --- Recorer array de signos vitales      
 $datosS= array();
@@ -95,6 +96,7 @@ $templateWord->setValue('nombres',$nombre);
 $templateWord->setValue('turnos',$turno);
 $templateWord->setValue('fechas',$fecha);
 $templateWord->setValue('notas',$nota);
+$templateWord->setValue('e',$enf);
 $templateWord->cloneRowAndSetValues('horaS', $datosS);
 $templateWord->cloneRowAndSetValues('horaB', $datosB);
 $templateWord->cloneRowAndSetValues('horaL', $datosL);
@@ -104,7 +106,7 @@ $templateWord->cloneRowAndSetValues('horaM', $datosM);
 // --- Guardamos el documento
 $templateWord->saveAs('UnNuevoAmanecer.docx');
 
-header("Content-Disposition: attachment; filename=UnNuevoAmanecer-$nombre.docx; charset=iso-8859-1");
+header("Content-Disposition: attachment; filename=UnNuevoAmanecer-$enf.docx; charset=iso-8859-1");
 echo file_get_contents('UnNuevoAmanecer.docx');
 
 // --- borramos el fichero
