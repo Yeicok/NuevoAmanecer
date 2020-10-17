@@ -4,7 +4,7 @@ use PhpOffice\PhpWord\TemplateProcessor;
 $templateWord = new TemplateProcessor('plantillaWord/plantilla.docx');
 require_once $_SERVER["DOCUMENT_ROOT"].'/APP/models/administrador.php'; 
         //ID 
-        $id = (isset($_GET["idC"])) ? $_GET["idC"] : 0;
+        $id = (isset($_GET["id"])) ? $_GET["id"] : 0;
         //Se consulta por ID
         $res =  administrador::consultaNovedad($id);
         $res1 = administrador::consultaSignosv($id);
