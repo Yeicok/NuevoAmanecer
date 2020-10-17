@@ -15,10 +15,10 @@ require_once $_SERVER["DOCUMENT_ROOT"].'/APP/models/administrador.php';
 if ($res != null || $res1 != null || $res2 != null || $res3 != null || $res4 != null) {
      
    $detalles   = $res->fetch_all()[0];
-   $Signosv    = $res1->fetch_all();
-   $Balancella = $res2->fetch_all();
-   $Liquidoe   = $res3->fetch_all();
-   $medicacion = $res4->fetch_all();
+   // $Signosv    = $res1->fetch_all();
+   // $Balancella = $res2->fetch_all();
+   // $Liquidoe   = $res3->fetch_all();
+   // $medicacion = $res4->fetch_all();
    
         $nombre =$detalles[13]; 
         $turno  =$detalles[8];
@@ -26,55 +26,55 @@ if ($res != null || $res1 != null || $res2 != null || $res3 != null || $res4 != 
         $nota   =$detalles[11];
         
 // --- Recorer array de signos vitales      
-$datosS= array();
-for( $i = 0;  $i < count ($Signosv);  $i++){ 
+// $datosS= array();
+// for( $i = 0;  $i < count ($Signosv);  $i++){ 
 
-   $s['horaS'] =$Signosv[$i][21];
-   $s['tipoS'] =$Signosv[$i][20];
-   $s['descripcionS'] =$Signosv[$i][22];
+//    $s['horaS'] =$Signosv[$i][21];
+//    $s['tipoS'] =$Signosv[$i][20];
+//    $s['descripcionS'] =$Signosv[$i][22];
    
-      $datosS[]= $s;     
-}
+//       $datosS[]= $s;     
+// }
 // echo'<pre>';
 // print_r($datos);
 
 // --- Recorer array de balance      
-$datosB= array();
-for( $j = 0;  $j < count ($Balancella);  $j++){ 
+// $datosB= array();
+// for( $j = 0;  $j < count ($Balancella);  $j++){ 
 
-   $b['horaB'] =$Balancella[$j][21];
-   $b['tipoB'] =$Balancella[$j][20];
-   $b['descripcionB'] =$Balancella[$j][22];
+//    $b['horaB'] =$Balancella[$j][21];
+//    $b['tipoB'] =$Balancella[$j][20];
+//    $b['descripcionB'] =$Balancella[$j][22];
    
-      $datosB[]= $b;     
-}
+//       $datosB[]= $b;     
+// }
 // echo'<pre>';
 // print_r($datos);
 
 // --- Recorer array de Liquidoe      
-$datosL= array();
-for( $fila = 0;  $fila < count ($Liquidoe);  $fila++){ 
+// $datosL= array();
+// for( $fila = 0;  $fila < count ($Liquidoe);  $fila++){ 
 
-   $L['horaL'] =$Liquidoe[$fila][21];
-   $L['tipoL'] =$Liquidoe[$fila][20];
-   $L['descripcionL'] =$Liquidoe[$fila][22];
+//    $L['horaL'] =$Liquidoe[$fila][21];
+//    $L['tipoL'] =$Liquidoe[$fila][20];
+//    $L['descripcionL'] =$Liquidoe[$fila][22];
    
-      $datosL[]= $L;     
-}
+//       $datosL[]= $L;     
+// }
 // echo'<pre>';
 // print_r($datos);
 
 // --- Recorer array de medicacion      
-$datosM= array();
-for( $columna = 0;  $columna < count ($medicacion);  $columna++){ 
+// $datosM= array();
+// for( $columna = 0;  $columna < count ($medicacion);  $columna++){ 
 
-   $M['horaM'] =$medicacion[$columna][20];
-   $M['medicacionM'] =$medicacion[$columna][21];
-   $M['viaM'] =$medicacion[$columna][22];
-   $M['dosisM'] =$medicacion[$columna][23];
+//    $M['horaM'] =$medicacion[$columna][20];
+//    $M['medicacionM'] =$medicacion[$columna][21];
+//    $M['viaM'] =$medicacion[$columna][22];
+//    $M['dosisM'] =$medicacion[$columna][23];
    
-      $datosM[]= $M;     
-}
+//       $datosM[]= $M;     
+// }
 // echo'<pre>';
 // print_r($datos);
 
@@ -95,10 +95,10 @@ $templateWord->setValue('nombres',$nombre);
 $templateWord->setValue('turnos',$turno);
 $templateWord->setValue('fechas',$fecha);
 $templateWord->setValue('notas',$nota);
-$templateWord->cloneRowAndSetValues('horasS', $datosS);
-$templateWord->cloneRowAndSetValues('horaB', $datosB);
-$templateWord->cloneRowAndSetValues('horaL', $datosL);
-$templateWord->cloneRowAndSetValues('horaM', $datosM);
+// $templateWord->cloneRowAndSetValues('horasS', $datosS);
+// $templateWord->cloneRowAndSetValues('horaB', $datosB);
+// $templateWord->cloneRowAndSetValues('horaL', $datosL);
+// $templateWord->cloneRowAndSetValues('horaM', $datosM);
 
 
 // --- Guardamos el documento
