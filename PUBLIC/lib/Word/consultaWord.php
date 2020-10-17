@@ -22,19 +22,19 @@ if ($res != null || $res1 != null || $res2 != null || $res3 != null || $res4 != 
    
         $nombre =$detalles[13]; 
         $turno  =$detalles[8];
-        $fechas =$detalles[9];
+        $fecha =$detalles[9];
         $nota   =$detalles[11];
         
 // --- Recorer array de signos vitales      
-// $datosS= array();
-// for( $i = 0;  $i < count ($Signosv);  $i++){ 
+$datosS= array();
+for( $i = 0;  $i < count ($Signosv);  $i++){ 
 
-//    $s['horaS'] =$Signosv[$i][21];
-//    $s['tipoS'] =$Signosv[$i][20];
-//    $s['descripcionS'] =$Signosv[$i][22];
+   $s['horaS'] =$Signosv[$i][21];
+   $s['tipoS'] =$Signosv[$i][20];
+   $s['descripcionS'] =$Signosv[$i][22];
    
-//       $datosS[]= $s;     
-// }
+      $datosS[]= $s;     
+}
 // echo'<pre>';
 // print_r($datos);
 
@@ -95,7 +95,7 @@ $templateWord->setValue('nombres',$nombre);
 $templateWord->setValue('turnos',$turno);
 $templateWord->setValue('fechas',$fecha);
 $templateWord->setValue('notas',$nota);
-// $templateWord->cloneRowAndSetValues('horasS', $datosS);
+$templateWord->cloneRowAndSetValues('horaS', $datosS);
 // $templateWord->cloneRowAndSetValues('horaB', $datosB);
 // $templateWord->cloneRowAndSetValues('horaL', $datosL);
 // $templateWord->cloneRowAndSetValues('horaM', $datosM);
