@@ -40,11 +40,11 @@ for( $i = 0;  $i < count ($Signosv);  $i++){
 
 // --- Recorer array de balance      
 $datosB= array();
-for( $i = 0;  $i < count ($Balancella);  $i++){ 
+for( $j = 0;  $j < count ($Balancella);  $j++){ 
 
-   $b['horaB'] =$Balancella[$i][21];
-   $b['tipoB'] =$Balancella[$i][20];
-   $b['descripcionB'] =$Balancella[$i][22];
+   $b['horaB'] =$Balancella[$j][21];
+   $b['tipoB'] =$Balancella[$j][20];
+   $b['descripcionB'] =$Balancella[$j][22];
    
       $datosB[]= $b;     
 }
@@ -53,11 +53,11 @@ for( $i = 0;  $i < count ($Balancella);  $i++){
 
 // --- Recorer array de Liquidoe      
 $datosL= array();
-for( $i = 0;  $i < count ($Liquidoe);  $i++){ 
+for( $fila = 0;  $fila < count ($Liquidoe);  $fila++){ 
 
-   $L['horaL'] =$Liquidoe[$i][21];
-   $L['tipoL'] =$Liquidoe[$i][20];
-   $L['descripcionL'] =$Liquidoe[$i][22];
+   $L['horaL'] =$Liquidoe[$fila][21];
+   $L['tipoL'] =$Liquidoe[$fila][20];
+   $L['descripcionL'] =$Liquidoe[$fila][22];
    
       $datosL[]= $L;     
 }
@@ -66,12 +66,12 @@ for( $i = 0;  $i < count ($Liquidoe);  $i++){
 
 // --- Recorer array de medicacion      
 $datosM= array();
-for( $i = 0;  $i < count ($medicacion);  $i++){ 
+for( $columna = 0;  $columna < count ($medicacion);  $columna++){ 
 
-   $M['horaM'] =$medicacion[$i][20];
-   $M['medicacionM'] =$medicacion[$i][21];
-   $M['viaM'] =$medicacion[$i][22];
-   $M['dosisM'] =$medicacion[$i][23];
+   $M['horaM'] =$medicacion[$columna][20];
+   $M['medicacionM'] =$medicacion[$columna][21];
+   $M['viaM'] =$medicacion[$columna][22];
+   $M['dosisM'] =$medicacion[$columna][23];
    
       $datosM[]= $M;     
 }
