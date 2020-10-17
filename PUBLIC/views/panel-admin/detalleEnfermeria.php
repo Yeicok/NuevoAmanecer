@@ -52,8 +52,7 @@
                                                 <td><?php echo $data['fecha']    ;?></td>
                                                 <td><?php echo $data['novedad']  ;?></td>
                                                 <td><?php echo $data['nombre']  ;?></td>
-                                                <td><a class='nav-link' href='/PUBLIC/lib/Word/consultaWord.php?idc=<?php echo $data['idNovedad'];?>'><div style="font-size: 20px;" class='sb-nav-link-icons'><i class='fas fa-file-word'></i></div></a>
-                                                <a class='nav-link' href='/PUBLIC/lib/Word/reporteWord.php'><div style="font-size: 20px;" class='sb-nav-link-icons'><i class='fas fa-file-word'></i></div></a>
+                                                <td><a class='nav-link' href='/PUBLIC/lib/Word/consultaWord.php?idC=<?php echo $data['idNovedad'];?>'><div style="font-size: 20px;" class='sb-nav-link-icons'><i class='fas fa-file-word'></i></div></a>
                                                 </td>
                                             </tr>
                                         <?php } ?>
