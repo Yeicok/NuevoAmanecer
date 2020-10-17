@@ -1,7 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 use PhpOffice\PhpWord\TemplateProcessor;
-$templateWord = new TemplateProcessor('plantillaWord/plantilla2.docx');
+$templateWord = new TemplateProcessor('plantillaWord/plantilla.docx');
 require_once $_SERVER["DOCUMENT_ROOT"].'/APP/models/administrador.php'; 
         //ID 
         $id = (isset($_GET["idC"])) ? $_GET["idC"] : 0;
