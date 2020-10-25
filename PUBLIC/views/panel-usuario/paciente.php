@@ -79,7 +79,7 @@
                                             SIGNOS  VITALES
                                             <div class='btn btn-success' id="btnNuevoSignosV">Nuevo</div>
                                             </label>
-                                            <div class="table-responsive">
+                                            <div class="table-responsive-sm">
                                                 <table class='table table-bordered table-hover' id="tablaSignosV">
                                                     <tr>
                                                         <th>HORA</th>
@@ -129,7 +129,7 @@
                                             MEDICACION
                                             <div class='btn btn-success' id="btnNuevoMedicamentos">Nuevo</div>
                                             </label>
-                                            <div class="table-responsive">
+                                            <div class="table-responsive-sm">
                                                 <table class='table table-bordered table-hover' id="tablaMedicamentos">
                                                     <tr>
                                                         <th>HORA</th>
@@ -160,7 +160,7 @@
                                             BALANCE LIQUIDOS  -  LIQUIDOS ADMINISTRADOS
                                             <div class='btn btn-success' id="btnNuevoBalanceLLA">Nuevo</div>
                                             </label>
-                                            <div class="table-responsive">
+                                            <div class="table-responsive-sm">
                                                 <table class='table table-bordered table-hover' id="tablaBalanceLLA">
                                                     <tr>
                                                         <th>HORA</th>
@@ -202,7 +202,7 @@
                                             LIQUIDOS  ELIMINADOS
                                             <div class='btn btn-success' id="btnNuevoLiquidoE">Nuevo</div>
                                             </label>
-                                            <div class="table-responsive">
+                                            <div class="table-responsive-sm">
                                                 <table class='table table-bordered table-hover' id="tablaLiquidoE">
                                                     <tr>
                                                         <th>HORA</th>
