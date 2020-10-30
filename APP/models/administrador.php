@@ -30,7 +30,7 @@ class administrador{
         '$this->edad',
         '$this->dx',
         '$this->cedula',
-        '$this->entidad'
+        '$this->entidad',
         '$this->fechaN'
         )");
 
