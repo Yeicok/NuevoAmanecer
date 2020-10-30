@@ -63,14 +63,14 @@
                                             </div>
                                         </div>
                                         <div class="form-row">
-                                            <div class="col-md-4 mb-3">
+                                            <div class="col-md-3 mb-3">
                                                 <label for="validationCustom04">Cedula</label>
                                                 <input type="text" class="form-control" name="cedula" id="validationCustom04" required>
                                                 <div class="valid-feedback">
                                                     Se ve bien!
                                                 </div>
                                             </div>
-                                            <div class="col-md-5 mb-3">
+                                            <div class="col-md-4 mb-3">
                                                 <label for="validationCustom05">Entidad</label>
                                                 <div class="input-group-prepend">
                                                 <input type="text" class="form-control" name="entidad" id="validationCustom05"  >
@@ -79,8 +79,8 @@
                                                     Se ve bien!
                                                 </div>
                                             </div>
-                                            <div class="col-md-2 mb-3">
-                                                <label for="fechas">Fecha de ingreso</label>
+                                            <div class="col-md-4 mb-3">
+                                                <label for="fechas">Fecha de nacimiento</label>
                                                 <div class="input-group-prepend">
                                                  <input type="date" name="fecha" class="form-control" id="fechas" >
                                                 </div>
