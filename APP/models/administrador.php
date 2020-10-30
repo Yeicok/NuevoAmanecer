@@ -49,7 +49,8 @@ class administrador{
                   edad = '$this->edad',
                   dx = '$this->dx',
                   cedula = '$this->cedula',
-                  entidad = '$this->entidad'
+                  entidad = '$this->entidad',
+                  fechaN = '$this->fecha'
                   where idPaciente ='$this->idPaciente'
         ");
 

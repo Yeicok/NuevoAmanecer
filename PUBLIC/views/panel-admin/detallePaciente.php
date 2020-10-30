@@ -62,7 +62,7 @@
                                                 </div>
                                             </div>
                                             <div class="form-row">
-                                                <div class="col-md-4 mb-3">
+                                                <div class="col-md-3 mb-3">
                                                     <label for="validationCustom04">Cedula</label>
                                                     <input type="text" class="form-control" name="cedula" value="<?= $detalles[4] ?>" id="validationCustom04" required>
                                                     <div class="valid-feedback">
@@ -78,13 +78,13 @@
                                                         Se ve bien!
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2 mb-3">
-                                                    <label>.</label>
+                                                <div class="col-md-3 mb-3">
+                                                    <label for="fechas">Fecha de nacimiento</label>
                                                     <div class="input-group-prepend">
-                                                        <input type="submit" id="btnUpdatePacientes" class="btn btn-primary btn-lg"  value="Actualizar" /></br></br>
-
+                                                     <input type="date" class="form-control" name="fecha" value="<?= $detalles[6] ?>" id="fechas" >
                                                     </div>
                                                 </div>
+                                                        <input type="submit" id="btnUpdatePacientes" class="btn btn-primary btn-lg"  value="Actualizar" /></br></br>
                                             </div>
 
                                             <!-- Animacion de load (solo sera visible cuando el cliente espere una respuesta del servidor )-->

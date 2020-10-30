@@ -273,6 +273,7 @@ class adminController{
                 $paciente->dx      = $_POST["dx"];
                 $paciente->cedula  = $_POST["cedula"];
                 $paciente->entidad = $_POST["entidad"];
+                $paciente->fecha = $_POST["fecha"];
                 
                 $res = $paciente->updatePaciente();
                 if($res == 1){
