@@ -70,7 +70,7 @@
                                                     Se ve bien!
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 mb-3">
+                                            <div class="col-md-5 mb-3">
                                                 <label for="validationCustom05">Entidad</label>
                                                 <div class="input-group-prepend">
                                                 <input type="text" class="form-control" name="entidad" id="validationCustom05"  >
@@ -79,7 +79,7 @@
                                                     Se ve bien!
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 mb-3">
+                                            <div class="col-md-3 mb-3">
                                                 <label for="fechas">Fecha de nacimiento</label>
                                                 <div class="input-group-prepend">
                                                  <input type="date" name="fecha" class="form-control" id="fechas" >

@@ -14,7 +14,7 @@
   
   <!-- funciones-->
   <script src="/PUBLIC/js/funciones/elementos.js"></script>
-  <script src="/PUBLIC/js/funciones/alerts.js"></script>
+  <script src="/PUBLIC/js/funciones/alert.js"></script>
   <script src="/PUBLIC/js/funciones/validacion.js"></script>
 
 

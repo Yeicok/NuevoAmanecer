@@ -31,6 +31,7 @@ class administrador{
         '$this->dx',
         '$this->cedula',
         '$this->entidad'
+        '$this->fechaN'
         )");
 
         // echo "<br>".$insert;//
