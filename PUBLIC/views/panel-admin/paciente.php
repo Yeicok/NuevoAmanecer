@@ -80,12 +80,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-2 mb-3">
-                                                <label>.</label>
+                                                <label for="fechas">Fecha de ingreso</label>
                                                 <div class="input-group-prepend">
-                                                     <input type="submit" id="btnCrearPacientes" class="btn btn-primary btn-lg"  value="Crear paciente" /></br></br>
-
+                                                 <input type="date" name="fecha" class="form-control" id="fechas" >
                                                 </div>
                                             </div>
+                                                     <input type="submit" id="btnCrearPacientes" class="btn btn-primary btn-lg"  value="Crear paciente" /></br></br>
                                         </div>
 
                                         <!-- Animacion de load (solo sera visible cuando el cliente espere una respuesta del servidor )-->
